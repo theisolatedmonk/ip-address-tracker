@@ -9,11 +9,13 @@ import { InputPage } from './InputPage'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center bg-gray-400 ">
-      <Image className='relative' src={patternDesktop} alt={''}/>
-
+    <main className="flex  min-h-screen flex-col items-center bg-gray-400 w-full ">
+     <div className="flex w-full relative"> <Image className=' h-full w-full' src={patternDesktop} alt={''}/></div>
+    
       <InputPage/>
-    <div className="w-full bg-yellow-200 h-full">klkl;k</div>
+      {/* </div> */}
+      <div className="w-full bg-yellow-200 h-full">klkl;k</div>
     </main>
+    
   )
 }
