@@ -8,7 +8,7 @@ export function InputPage({}: Props) {
   return (
     <div className="top-0 w-full min-h-screen  bg-opacity-30 flex justify-center  fixed inset-0">
       {" "}
-      <div className="flex flex-col   items-center gap-4 w-full    h-full mt-24  ">
+      <div className="flex flex-col   items-center gap-4 w-full    h-full sm:mt-24  ">
         <p>IP Address Tracker</p>
         <div className="bg-whit rounded-lg  flex items-center h-10  justify-center w-[40%]">
           <input
@@ -22,7 +22,7 @@ export function InputPage({}: Props) {
             <Image className="  " src={arrowIcon} alt={""} />
           </button>
         </div>
-        <div className="flex bg-white p-8 items-center justify-between rounded-lg w-[80%]">
+        <div className="flex flex-col bg-white p-8 items-center justify-between rounded-lg w-[80%]">
           <Data name={"IP ADDRESS"} output={""} class={"border-r-2"} />
           <Data name={"LOCATION"} output={""} class={"border-r-2"} />
           <Data name={"TIMEZONE"} output={"TIMEZONE"} class={"border-r-2"} />
