@@ -22,7 +22,7 @@ export function InputPage({}: Props) {
             <Image className="  " src={arrowIcon} alt={""} />
           </button>
         </div>
-        <div className="flex flex-col bg-white p-8 items-center justify-between rounded-lg w-[80%]">
+        <div className="flex flex-col bg-white p-8 items-center justify-between rounded-lg w-[80%] sm:flex-row">
           <Data name={"IP ADDRESS"} output={""} class={"border-r-2"} />
           <Data name={"LOCATION"} output={""} class={"border-r-2"} />
           <Data name={"TIMEZONE"} output={"TIMEZONE"} class={"border-r-2"} />
@@ -41,7 +41,7 @@ type DataType = {
 
 export function Data(props: DataType) {
   return (
-    <div className={"flex flex-col bg-w p-2 gap-2 bg-black   ${props.class} "}>
+    <div className={"flex flex-col  bg-w p-2 gap-2 bg-black   ${props.class} "}>
       <p className="bg-green-400  text-[hsl(0,0%,59%)] ">{props.name}</p>
       <p className="bg-yellow-500 w-full text-[hsl(0,0%,17%)]">
         {props.output}{" "}
