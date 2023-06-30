@@ -6,13 +6,13 @@ type Props = {};
 
 export function InputPage({}: Props) {
   return (
-    <div className="top-0 w-full min-h-screen  bg-opacity-30 flex justify-center  fixed inset-0">
+    <div className="top-0 w-full  bg-opacity-30 flex h-[41%]  fixed  inset-0 z-20">
       {" "}
-      <div className="flex flex-col   items-center gap-4 w-full    h-full sm:mt-24  ">
+      <div className="flex flex-col   items-center gap-4 w-full    h-full sm:mt-24 bg-opacity-30  ">
         <p>IP Address Tracker</p>
-        <div className="bg-whit rounded-lg  flex items-center h-10  justify-center w-[40%]">
+        <div className="bg-whit rounded-lg  flex items-center h-10  justify-center sm:w-[40%] w-[80%]  ">
           <input
-            className="text-black h-full  outline-none rounded-l-lg w-full p-2 text-[18px]"
+            className="text-black h-full w-f outline-none rounded-l-lg w-full p-2 text-[18px]"
             type="number "
             placeholder="Search for any IP address or domain"
           />
